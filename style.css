@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,body {
+    font-family: 微軟正黑體;
+}
+
+#banner {
+    background-image: url(img/Banner.jpg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    height: 900px;
+}
+nav {
+    padding: 50px 0;
+    width: 80%;
+    margin: 0 auto;
+}
+#logo {
+    width: 300px;
+}
+#link {
+    float: right;
+    padding: 40px 0;
+}
+#link a {
+    text-decoration: none;
+    color: white;
+    margin-right: 45px;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 5px;
+    padding: 8px;
+}
+#link a:hover {
+    background-color: #ffe048;
+    color: black;
+    transition: 0.6s
+}
