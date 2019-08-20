@@ -22,11 +22,12 @@ html(lang="zh")
         meta(charset="UTF-8")
         title 狸小路 | 首頁
         link(rel="stylesheet", href="style.css")
+        link(rel="shortcut icon", href="img/favicon.png", type="image/x-icon")
     body
         div(id="banner")
             nav
-                img(src="img/LOGO.png", alt="狸小路 LGOO" id="logo")
-                div(id="link")
+                img(src="img/LOGO.png", alt="狸小路 LGOO" class="logo")
+                div(class="link")
                     a(href="#") 最新消息
                     a(href="#") 產品介紹
                     a(href="#") 聯絡我們
@@ -38,14 +39,37 @@ html(lang="zh")
         +title("CAKE", "產品介紹")
 
         section(id="product")
-            +product-box("cake01", "香蕉巧克力蛋糕$280", "苦甜巧克力的蛋糕體配上新鮮的香蕉切片，再搭上一些鮮奶油，意想不到的搭配組合出意想不到的口感")
-            +product-box("cake02", "貓咬乳酪$200", "單純的以蛋、牛奶、乳酪、日本麵粉、奶油為原料組合出不簡單的口感 ")
-            +product-box("cake03", "貓咬乳酪$200", "單純的以蛋、牛奶、乳酪、日本麵粉、奶油為原料組合出不簡單的口感 ")
-            +product-box("cake04", "貓咬乳酪$200", "單純的以蛋、牛奶、乳酪、日本麵粉、奶油為原料組合出不簡單的口感 ")
-            +product-box("cake05", "貓咬乳酪$200", "單純的以蛋、牛奶、乳酪、日本麵粉、奶油為原料組合出不簡單的口感 ")
-            +product-box("cake06", "貓咬乳酪$200", "單純的以蛋、牛奶、乳酪、日本麵粉、奶油為原料組合出不簡單的口感 ")
-
-
+            +product-box("cake01", "香蕉巧克力蛋糕 $280", "苦甜巧克力的蛋糕體配上新鮮的香蕉切片，再搭上一些鮮奶油，意想不到的搭配組合出意想不到的口感")
+            +product-box("cake02", "貓咬乳酪 $200", "單純的以蛋、牛奶、乳酪、日本麵粉、奶油為原料組合出不簡單的口感 ")
+            +product-box("cake03", "貓咬乳酪 $200", "單純的以蛋、牛奶、乳酪、日本麵粉、奶油為原料組合出不簡單的口感 ")
+            +product-box("cake04", "貓咬乳酪 $200", "單純的以蛋、牛奶、乳酪、日本麵粉、奶油為原料組合出不簡單的口感 ")
+            +product-box("cake05", "貓咬乳酪 $200", "單純的以蛋、牛奶、乳酪、日本麵粉、奶油為原料組合出不簡單的口感 ")
+            +product-box("cake06", "貓咬乳酪 $200", "單純的以蛋、牛奶、乳酪、日本麵粉、奶油為原料組合出不簡單的口感 ")
+        a(href="#",class="btn-big") 觀看產品目錄
+        div(class="small-line")
             
         +title("NEWS", "最新消息")
+
+        section(id="news")
+            div(id="text")
+                h2 官方網站正式上線囉！
+                p 【狸小路手作烘焙】小路官方網站可以讓您瀏覽小路的所有蛋糕品項唷~您也可以線上詢問小路有關蛋糕的問題喔!那此官方網站是不提供蛋糕訂購的唷~ #[br]
+                    |有需要訂購蛋糕的話您可以從小路的粉絲專頁上私訊小路做訂購唷!或是直接撥打門市電話做預訂也是可以的呦~#[br]
+                    |裕學門市電話:06-2909702#[br]
+                    |民族門市電話:06-2225374#[br]
+                    |小路客服專線:06-2430890#[br]#[br]
+                    |2017/03/01
+            img(src="img/news.jpg")
+
+
         +title("CONTACT", "聯絡我們")
+
+        footer
+            nav
+                img(src="img/LOGO.png", alt="狸小路 LGOO" class="logo")
+                div(class="link")
+                    a(href="#") 最新消息
+                    a(href="#") 產品介紹
+                    a(href="#") 聯絡我們
+            div(id="copy") Copyright &copy; 2019 狸小路. All rights reserved
+

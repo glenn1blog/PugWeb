@@ -4,6 +4,8 @@
 }
 html,body {
     font-family: 微軟正黑體;
+    text-align: center;
+    background-color: #faf7f0;
 }
 
 #banner {
@@ -18,14 +20,14 @@ nav {
     width: 80%;
     margin: 0 auto;
 }
-#logo {
+.logo {
     width: 300px;
 }
-#link {
+.link {
     float: right;
     padding: 40px 0;
 }
-#link a {
+.link a {
     text-decoration: none;
     color: white;
     margin-right: 45px;
@@ -34,7 +36,7 @@ nav {
     letter-spacing: 5px;
     padding: 8px;
 }
-#link a:hover {
+.link a:hover {
     background-color: #ffe048;
     color: black;
     transition: 0.6s
@@ -80,4 +82,98 @@ nav {
 
 .title-box h1 {
     font-size: 1.6em;
+}
+
+/*產品區塊*/
+#product {
+    /*顯示模式:格線*/
+    display: grid;
+    /*格線-框架-欄位: 欄位尺寸1 欄位尺寸2 ... 欄位尺寸N gtc */
+    grid-template-columns: auto auto auto;
+    /*欄位間隔*/
+    grid-gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+#product img {
+    width: 100%;
+}
+
+.product-box {
+    padding: 0 10px;
+}
+.product-box a {
+    text-decoration: none;
+}
+.product-box h2 {
+    color: #fbab13;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.product-box p {
+    color: black;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+.product-box hr {
+    height: 3px;
+    background-color: #bdac90;
+    border: 0;
+    margin: 15px 0;
+}
+
+.btn-big {
+    display: inline-block;
+    text-decoration: none;
+    width: 280px;
+    height: 40px;
+    line-height: 40px;
+    background: #642200;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    border: 2px solid #642200;
+    transition: 0.2s;
+    margin: 50px;
+}
+.btn-big:hover {
+    background-color: transparent;
+    color: #642200;
+    border: 2px solid #642200;
+}
+
+.small-line {
+    background-image: url(img/small-line.png);
+    height: 5px;
+    background-repeat: repeat-x;
+}
+
+#news {
+    height: 400px;
+    padding: 0 300px;
+}
+#news #text {
+    width: 300px;
+    float: left;
+    margin-left: ;
+}
+#news h2{
+    color: #ffd471;
+}
+#news p {
+    color: #607a93;
+    padding: 10px;
+}
+#news img {
+    float: right;
+    margin-right: 5%;
+}
+
+footer {
+    background-color: #642200;
+    padding: 20px;
+    color: white;
+    font-size: 0.7em;
 }
