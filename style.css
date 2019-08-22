@@ -35,6 +35,7 @@ nav {
     font-size: 18px;
     letter-spacing: 5px;
     padding: 8px;
+    
 }
 .link a:hover {
     background-color: #ffe048;
@@ -176,4 +177,63 @@ footer {
     padding: 20px;
     color: white;
     font-size: 0.7em;
+}
+
+/*RWD*/
+/* 媒體為螢幕 並且 寬度大於 1024px - 桌機*/
+@media screen and (min-width: 1024px) {
+  
+}
+/* 媒體為螢幕 並且 寬度大於 1023px - 平板*/
+@media screen and (max-width: 1023px) {
+    .link {
+        float: none;
+        padding: 20px 0;
+    }
+    #product {
+        grid-template-columns: 1fr 1fr;
+    }
+    #news {
+        padding: 0;
+        height: 100%;
+    }
+    #news #text {
+        width: 300px;
+        text-align: center;
+        margin: auto;
+        float: none;
+    }
+    #news img {
+        float: none;
+        margin-right: 0%;
+    }
+}
+/* 媒體為螢幕 並且 寬度小於 767px - 手機*/
+@media screen and (max-width: 767px) {
+    nav {
+        padding: 10px 0;
+    }
+    .link {
+        float: none;
+        padding: 20px 0;
+    }
+    .link a {
+        margin-right: 0px;
+        letter-spacing: 1px;
+    }
+    .logo {
+        width: 200px;
+    }
+    #product {
+        grid-template-columns: 1fr;
+    }
+    #brands p {
+        width: 80%;
+    }
+    #brands > img {
+        width: 100%;
+    }
+    #news img {
+        width: 100%;
+    }
 }
